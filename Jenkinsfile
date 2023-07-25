@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('error') {
+    stage('git the repo') {
       steps {
         git(url: 'https://github.com/shinobi94/demo_repo', branch: 'main')
       }
