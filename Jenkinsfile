@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        echo 'hello'
+        git(url: 'https://github.com/shinobi94/demo_repo', branch: 'main')
       }
     }
 
